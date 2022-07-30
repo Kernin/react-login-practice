@@ -1,0 +1,61 @@
+body{
+  width:100%;
+  font-family: sans-serif;
+  background-image: url('./assets/llave-748150.png') ;
+
+}
+
+.form-inner{
+  width:30%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+  left:0;
+  right:0;
+
+  margin-top: calc(50vh/2);
+  padding: 16px 26px ;
+  border:1px solid #cdcdcd;
+  
+  background: #fdfdfd;
+  border-radius:12px;
+}
+
+h2, h1{
+  font-weight: bold;
+  text-align: center;
+}
+
+h1{
+  font-weight:900;
+  font-size:2.5em;
+}
+
+p, span{
+  font-weight: 300;
+}
+
+label{
+  width:100%;
+  padding:4px;
+  display:block;
+}
+
+input{ 
+  width:95%;
+
+  padding:4px 10px;
+  border:none;
+  border: solid 1px #c2c2c2;
+  border-radius: 8px;
+  margin:8px 6px;
+
+  height:40px
+}
+
+input[type="submit"]{
+  background:teal;
+  color:white;
+
+}
