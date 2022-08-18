@@ -1,61 +1,66 @@
-body{
-  width:100%;
+body {
+  width: 100%;
   font-family: sans-serif;
-  background-image: url('./assets/llave-748150.png') ;
-
+  // background-image: url('./assets/llave-748150.png') ;
 }
 
-.form-inner{
-  width:30%;
-  display:flex;
+.form-inner {
+  width: 30%;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin: auto;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
 
-  margin-top: calc(50vh/2);
-  padding: 16px 26px ;
-  border:1px solid #cdcdcd;
-  
+  margin-top: calc(50vh / 2);
+  padding: 16px 26px;
+  border: 1px solid #cdcdcd;
+
   background: #fdfdfd;
-  border-radius:12px;
+  border-radius: 12px;
 }
 
-h2, h1{
+h2,
+h1 {
   font-weight: bold;
   text-align: center;
 }
 
-h1{
-  font-weight:900;
-  font-size:2.5em;
+h1 {
+  font-weight: 900;
+  font-size: 2.5em;
 }
 
-p, span{
+p,
+span {
   font-weight: 300;
 }
 
-label{
-  width:100%;
-  padding:4px;
-  display:block;
+label {
+  width: 100%;
+  padding: 4px;
+  display: block;
 }
 
-input{ 
-  width:95%;
+input.textfield__input {
+  width: 90%;
 
-  padding:4px 10px;
-  border:none;
+  padding: 4px 10px;
+  border: none;
   border: solid 1px #c2c2c2;
   border-radius: 8px;
-  margin:8px 6px;
-
-  height:40px
+  margin: 8px 6px;
+  height: 40px;
 }
 
-input[type="submit"]{
-  background:teal;
-  color:white;
+input[type="submit"] {
+  @extend .textfield__input;
+  background: teal;
+  color: white;
+}
 
+input.textfield__input[type="radio"] {
+  width: 1.2rem;
+  display: inline-block;
 }

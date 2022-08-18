@@ -26,7 +26,7 @@ function App() {
           <button>Logout</button>
         </div>
       ) : (
-        <LoginForm Login={Login} error={error} />
+        <LoginForm Login={Login} error={'error'} />
       )}
     </div>
   );
