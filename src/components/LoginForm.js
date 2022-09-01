@@ -10,6 +10,7 @@ function LoginForm({ Login, error }) {
     comment: "",
   });
 
+  //reads and updates the text typed by user
   const handlerInputs = (field) => (e) => {
     setDetails({ ...details, [field]: e.target.value });
   };
