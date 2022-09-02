@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import InputField from "./input.js";
+import InputField from "./InputField";
 
 function LoginForm({ Login, error }) {
   const [details, setDetails] = useState({
@@ -52,23 +52,26 @@ function LoginForm({ Login, error }) {
           value={details.password}
         />
 
-        <InputField
-          id="mujer"
-          name="sexo"
-          label="Mujer"
-          type="radio"
-          onChange={handlerInputs("sexo")}
-          value="mujer"
-        />
+        <div>
+          <label htmlFor="sexo">Sexo</label>
+          <InputField
+            id="mujer"
+            name="sexo"
+            label="Mujer"
+            type="radio"
+            onChange={handlerInputs("sexo")}
+            value="mujer"
+          />
 
-        <InputField
-          id="hombre"
-          name="sexo"
-          label="Hombre"
-          type="radio"
-          onChange={handlerInputs("sexo")}
-          value="hombre"
-        />
+          <InputField
+            id="hombre"
+            name="sexo"
+            label="Hombre"
+            type="radio"
+            onChange={handlerInputs("sexo")}
+            value="hombre"
+          />
+        </div>
 
         <InputField
           id="comment"
@@ -76,6 +79,7 @@ function LoginForm({ Login, error }) {
           label=" Comentario "
           type="textarea"
           onChange={handlerInputs("comment")}
+          value={details.comment}
         />
 
         <input type="submit" value="LOGIN" />

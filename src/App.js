@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import LoginForm from './components/LoginForm';
+import './index.scss';
+
 
 function App() {
   const adminUser = {
@@ -8,7 +10,7 @@ function App() {
   }
 
   const [user, setUser] = useState({ name: "", email: "" });
-  const [error, setError] = useState("");
+  const [error, setError] = useState("AYNO algo malio sal");
 
   const Login = details => {
     console.log(details);
@@ -20,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      {(user.email != " ") ? (
+      {(user.email !== "") ? (
         <div className="welcome">
           <h2>Welcome, <span>{user.name}</span></h2>
           <button>Logout</button>
